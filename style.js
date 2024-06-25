@@ -106,24 +106,41 @@
 // }
 
 //While Loop
-let i=0;
-while(i<=10)
-{
-    if(i%2 == 0){
-    console.log("While Even Number", i);
-    }
-    i++;
-    console.log(i )
-}
+// let i=0;
+// while(i<=10)
+// {
+//     if(i%2 == 0){
+//     console.log("While Even Number", i);
+//     }
+//     i++;
+//     console.log(i )
+// }
 
 //Do While Loop
 // let i=0;
-do{
-    if(i %2 !== 0){
-        console.log("Do While Even Number", i);
-        }
-        i++;
+// do{
+//     if(i %2 !== 0){
+//         console.log("Do While Even Number", i);
+//         }
+//         i++;
     // console.log(i)
-}while(i <= 10);
+// }while(i <= 10);
 
+// For In Loop
+// Object
+const person={
+    name:'gokul',
+    age:26,
+    sex:'Male'
+};
+for(let key in person)
+{
+    console.log(key + " : ",person[key])
+}
+// Array
+// let color=['red','green','yellow'];
+// for(let key in color)
+// {
+//     console.log(color[key])
+// }
 
