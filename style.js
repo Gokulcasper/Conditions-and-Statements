@@ -106,14 +106,24 @@
 // }
 
 //While Loop
-let i=1;
+let i=0;
 while(i<=10)
 {
     if(i%2 == 0){
-    console.log("Even Number", i);
+    console.log("While Even Number", i);
     }
     i++;
+    console.log(i )
 }
 
+//Do While Loop
+// let i=0;
+do{
+    if(i %2 !== 0){
+        console.log("Do While Even Number", i);
+        }
+        i++;
+    // console.log(i)
+}while(i <= 10);
 
 
