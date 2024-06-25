@@ -128,19 +128,26 @@
 
 // For In Loop
 // Object
-const person={
-    name:'gokul',
-    age:26,
-    sex:'Male'
-};
-for(let key in person)
-{
-    console.log(key + " : ",person[key])
-}
+// const person={
+//     name:'gokul',
+//     age:26,
+//     sex:'Male'
+// };
+// for(let key in person)
+// {
+//     console.log(key + " : ",person[key])
+// }
 // Array
 // let color=['red','green','yellow'];
-// for(let key in color)
+// for(let index in color)
 // {
-//     console.log(color[key])
+    // console.log(index)
+//     console.log(color[index])
 // }
 
+// For Of Loop
+let colors=['red','green','yellow'];
+for(let color of colors)
+{
+    console.log(color)
+}
