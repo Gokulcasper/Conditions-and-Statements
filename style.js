@@ -91,8 +91,29 @@
 //         console.log("Number #" + i);
 //     }
 // }
-for(let i = 10; i >= 1; i-- ){
-    if(i % 2 !== 0){
-        console.log("Odd Number #" + i);
+// for(let i = 1; i <= 10; i++ ){
+//     if(i % 2 !== 0){
+//         console.log("Odd Number #" + i);
+//     }
+// }
+// Or its not Correct FOR Loop
+// let i = 1;
+// for(; i <= 10;  ){
+//     if(i % 2 !== 0){
+//         console.log("Odd Number #" + i);
+//     }
+//     i++;
+// }
+
+//While Loop
+let i=1;
+while(i<=10)
+{
+    if(i%2 == 0){
+    console.log("Even Number", i);
     }
+    i++;
 }
+
+
+
