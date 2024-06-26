@@ -225,3 +225,14 @@ return{
 }
 let person=createStudent("Gokul","Learning JS");
 person.greeting();
+
+
+// Constructor Function
+function User(name){
+    this.name=name;
+    this.greeting=function(){
+        console.log(`My Name Is ${this.name}.`);
+    }
+}
+let Member=new User("Gokul");
+Member.greeting();
