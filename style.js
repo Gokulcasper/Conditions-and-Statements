@@ -194,20 +194,34 @@
 // greeting()
 //OR 
 // OPP (Object-Oriented Programming)
-let person={
-    name:"gokul",
-    age:26,
-    interest:['creating, teaching new things.'],
-    isAlive:true,
+// let person={
+//     name:"gokul",
+//     age:26,
+//     interest:['creating, teaching new things.'],
+//     isAlive:true,
     // nested object(object inside another object)
-    address:{
-        city:"namakkal",
-        state:"Tamilnadu"
-    },
-greeting: function(){
-    let msg=`My Name is ${person.name} I'm Interested in ${person.interest}. I'm From ${person.address.city}`;
+//     address:{
+//         city:"namakkal",
+//         state:"Tamilnadu"
+//     },
+// greeting: function(){
+//     let msg=`My Name is ${person.name} I'm Interested in ${person.interest}. I'm From ${person.address.city}`;
     // let msg=`My Name is ${this.name} I'm Interested in ${this.interest}. I'm From ${this.address.city}`;
-    console.log(msg);
-}
+//     console.log(msg);
+// }
+// };
+// person.greeting();
+
+// Factory Functions
+function createStudent(name,interest){
+return{
+    name,
+    interest,
+    greeting(){
+        let msg=`My Name Is ${this.name}. And I'm interested in ${this.interest}`;
+        console.log(msg);
+    }
 };
+}
+let person=createStudent("Gokul","Learning JS");
 person.greeting();
