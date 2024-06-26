@@ -146,8 +146,68 @@
 // }
 
 // For Of Loop
-let colors=['red','green','yellow'];
-for(let color of colors)
-{
-    console.log(color)
+// let colors=['red','green','yellow'];
+// for(let color of colors)
+// {
+//     console.log(color)
+// }
+
+// for(;;)
+// {
+//     console.log("infinit loop")
+// }
+
+
+//Object and OOP
+// let name="Gokul";
+// let age=26;
+// let interest=['creating, teaching new things.'];
+// let address={
+//     city:"namakkal",
+//     state:"Tamilnadu",
+// }
+
+// function greeting(){
+    // let msg="My Name Is " + name + " I'm interested in " + interest;
+    //OR
+//     let msg=`My Name Is ${name} I'm Interested in ${interest}`;
+//     console.log(msg);
+// }
+// greeting();
+
+
+//Encapsulation
+// let person={
+//     name:"gokul",
+//     age:26,
+//     interest:['creating, teaching new things.'],
+//     isAlive:true,
+//     // nested object(object inside another object)
+//     address:{
+//         city:"namakkal",
+//         state:"Tamilnadu"
+//     }
+// };
+// function greeting(){
+// console.log(`My Name is ${person.address.city} I'm Interested in ${person.interest}`)
+// }
+// greeting()
+//OR 
+// OPP (Object-Oriented Programming)
+let person={
+    name:"gokul",
+    age:26,
+    interest:['creating, teaching new things.'],
+    isAlive:true,
+    // nested object(object inside another object)
+    address:{
+        city:"namakkal",
+        state:"Tamilnadu"
+    },
+greeting: function(){
+    let msg=`My Name is ${person.name} I'm Interested in ${person.interest}. I'm From ${person.address.city}`;
+    // let msg=`My Name is ${this.name} I'm Interested in ${this.interest}. I'm From ${this.address.city}`;
+    console.log(msg);
 }
+};
+person.greeting();
