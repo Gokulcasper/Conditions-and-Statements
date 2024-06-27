@@ -213,26 +213,39 @@
 // person.greeting();
 
 // Factory Functions
-function createStudent(name,interest){
-return{
-    name,
-    interest,
-    greeting(){
-        let msg=`My Name Is ${this.name}. And I'm interested in ${this.interest}`;
-        console.log(msg);
-    }
-};
-}
-let person=createStudent("Gokul","Learning JS");
-person.greeting();
+// function createStudent(name,interest){
+// return{
+//     name,
+//     interest,
+//     greeting(){
+//         let msg=`My Name Is ${this.name}. And I'm interested in ${this.interest}`;
+//         console.log(msg);
+//     }
+// };
+// }
+// let person=createStudent("Gokul","Learning JS");
+// person.greeting();
 
 
 // Constructor Function
-function User(name){
-    this.name=name;
-    this.greeting=function(){
-        console.log(`My Name Is ${this.name}.`);
-    }
+// function User(name,interest){
+//     // this.name=name;
+//     // this.interest=interest;
+//     this.name=name;
+//     this.interest;
+//     this.greeting=function(){
+//         console.log(`My Name Is ${this.name}. And I'm Interested in ${interest}`);
+//     }
+// }
+// let Member=new User("Gokul","learn JS");
+// Member.greeting();
+
+// Dynamic Object
+const person={
+    name:"gokul",
 }
-let Member=new User("Gokul");
-Member.greeting();
+person.age=26;
+person.greeting=function(){}
+delete person.greeting;
+// delete person.age;
+console.log(person)
