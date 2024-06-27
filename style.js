@@ -292,17 +292,40 @@
 // console.log(cartValue);
 
 // Enumerating Properties Of Object
+// const user={
+//     name:'Gokul',
+//     getName(){
+//         console.log(`My Name is ${this.name}`);
+//     }
+// }
+// if('name' in user)
+// {
+//     console.log("Yes");
+// }
+// for(let key in user)
+// console.log(key)
+// for(let key of Object.keys(user))
+// console.log(key)
+// for(let entry of Object.entries(user))
+// console.log(entry)
+
+
+// Cloning JS Object
 const user={
-    name:"Gokul",
+    name:'Gokul',
     getName(){
         console.log(`My Name is ${this.name}`);
     }
 }
-// for(let key in user)
-// console.log(key)
-
-for(let key of Object.keys(user))
-console.log(key)
-
-for(let entry of Object.entries(user))
-console.log(entry)
+// 1. Clone
+// let another={};
+// for(let key in user){
+//     another[key] = user[key];
+// }
+// console.log(another)
+// 2. Clone
+// let another = Object.assign({age:26},user);
+// console.log(another)\
+// 3. Clone
+let another = {...user}
+console.log(another)
