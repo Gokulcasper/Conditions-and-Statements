@@ -241,11 +241,23 @@
 // Member.greeting();
 
 // Dynamic Object
-const person={
-    name:"gokul",
-}
-person.age=26;
-person.greeting=function(){}
-delete person.greeting;
-// delete person.age;
-console.log(person)
+// const person={
+//     name:"gokul",
+// }
+// person.age=26;
+// person.greeting=function(){}
+// delete person.greeting;
+// // delete person.age;
+// console.log(person)
+
+
+// Constructor Property
+// let name="Gokul"; // StringLiterals -> new String("Gokul");
+// let age= 3;  // NumberLiterals -> new Number(3);
+// let isAlive=true; // BooleanLiterals -> new Boolean(true);
+// console.log(name,age,isAlive);
+
+let name1= new String("Gokul");
+let age1= new Number(3);
+let isAlive1=true; new Boolean(true);
+console.log(name1,age1,isAlive1);
