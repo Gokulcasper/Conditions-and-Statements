@@ -284,9 +284,25 @@
 // cartItem(cartValue);
 // console.log(cartValue);
 //Eg (Reference)
-let cartValue={value:10};
-function cartItem(cart){
-    cart.value++;
+// let cartValue={value:10};
+// function cartItem(cart){
+//     cart.value++;
+// }
+// cartItem(cartValue);
+// console.log(cartValue);
+
+// Enumerating Properties Of Object
+const user={
+    name:"Gokul",
+    getName(){
+        console.log(`My Name is ${this.name}`);
+    }
 }
-cartItem(cartValue);
-console.log(cartValue);
+// for(let key in user)
+// console.log(key)
+
+for(let key of Object.keys(user))
+console.log(key)
+
+for(let entry of Object.entries(user))
+console.log(entry)
