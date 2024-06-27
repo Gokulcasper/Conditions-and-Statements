@@ -257,7 +257,36 @@
 // let isAlive=true; // BooleanLiterals -> new Boolean(true);
 // console.log(name,age,isAlive);
 
-let name1= new String("Gokul");
-let age1= new Number(3);
-let isAlive1=true; new Boolean(true);
-console.log(name1,age1,isAlive1);
+// let name1= new String("Gokul");
+// let age1= new Number(3);
+// let isAlive1=true; new Boolean(true);
+// console.log(name1,age1,isAlive1);
+
+
+// Primitive Value Types VS Reference Types
+// Primitive Type
+// let x=10;
+// let y=x;
+// x=20;
+// console.log("x = ", +x);
+// console.log("y = ", +y);
+// Reference Type
+// let x={value:10};
+// let y= x;
+// x.value=20;
+// console.log("x = ", x);
+// console.log("y = "+ y);
+//Eg (Primitive)
+// let cartValue=10;
+// function cartItem(cart){
+//     cart++;
+// }
+// cartItem(cartValue);
+// console.log(cartValue);
+//Eg (Reference)
+let cartValue={value:10};
+function cartItem(cart){
+    cart.value++;
+}
+cartItem(cartValue);
+console.log(cartValue);
