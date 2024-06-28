@@ -331,13 +331,41 @@
 // console.log(another)
 
 // Math Object
-let mark=[12,54,63,36,26];
+// let mark=[12,54,63,36,26];
+// let resultMax=Math.max(...mark);
+// let resultMin=Math.min(...mark);
+// console.log("Maximum : " ,resultMax)
+// console.log("Minimum : " ,resultMin)
+// console.log(Math.ceil(12.4));
+// console.log(Math.round(12.4));
+
+// String Objects
+let firstName = "Gokul";
+let lastName = "Raj";
+let text="2 * 2"
+let para=" Some Text In Content! ";
+
+console.log(firstName.length);
+console.log(firstName.charAt(2));
+console.log(firstName.concat(' ', lastName));
+console.log(firstName.includes("ul"));
+console.log(firstName.includes("go"));
+console.log(firstName.startsWith("Go"));
+console.log(firstName.endsWith("ul"));
+console.log(firstName.indexOf("l"));
+console.log(firstName.repeat(10));
+console.log(firstName.replace("Gokul","Gocool"));
+console.log(firstName.slice(2));
+console.log(para.split(' ', 3));
+console.log(para.substring(10));
+console.log(firstName.toLowerCase());
+console.log(firstName.toUpperCase());
+console.log(para.trimStart());
+console.log(text.valueOf());
+console.log(eval(text));
+console.log(eval(text.valueOf()));
 
 
 
-let resultMax=Math.max(...mark);
-let resultMin=Math.min(...mark);
-console.log("Maximum : " ,resultMax)
-console.log("Minimum : " ,resultMin)
-console.log(Math.ceil(12.4));
-console.log(Math.round(12.4));
+
+
