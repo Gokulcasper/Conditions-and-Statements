@@ -311,12 +311,12 @@
 
 
 // Cloning JS Object
-const user={
-    name:'Gokul',
-    getName(){
-        console.log(`My Name is ${this.name}`);
-    }
-}
+// const user={
+//     name:'Gokul',
+//     getName(){
+//         console.log(`My Name is ${this.name}`);
+//     }
+// }
 // 1. Clone
 // let another={};
 // for(let key in user){
@@ -327,5 +327,17 @@ const user={
 // let another = Object.assign({age:26},user);
 // console.log(another)\
 // 3. Clone
-let another = {...user}
-console.log(another)
+// let another = {...user} //Spread Operator 
+// console.log(another)
+
+// Math Object
+let mark=[12,54,63,36,26];
+
+
+
+let resultMax=Math.max(...mark);
+let resultMin=Math.min(...mark);
+console.log("Maximum : " ,resultMax)
+console.log("Minimum : " ,resultMin)
+console.log(Math.ceil(12.4));
+console.log(Math.round(12.4));
