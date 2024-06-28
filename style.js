@@ -344,15 +344,13 @@ let firstName = "Gokul";
 let lastName = "Raj";
 let text="2 * 2"
 let para=" Some Text In Content! ";
+let myValue=[2,3,4,5,6]
 
 console.log(firstName.length);
 console.log(firstName.charAt(2));
 console.log(firstName.concat(' ', lastName));
-console.log(firstName.includes("ul"));
-console.log(firstName.includes("go"));
 console.log(firstName.startsWith("Go"));
 console.log(firstName.endsWith("ul"));
-console.log(firstName.indexOf("l"));
 console.log(firstName.repeat(10));
 console.log(firstName.replace("Gokul","Gocool"));
 console.log(firstName.slice(2));
@@ -364,8 +362,49 @@ console.log(para.trimStart());
 console.log(text.valueOf());
 console.log(eval(text));
 console.log(eval(text.valueOf()));
-
-
-
+//Splice method
+console.log(myValue);
+myValue.splice(2,2);
+console.log(myValue);
+let myValue1=[11,12,13,14,15,16];
+myValue1.splice(2,0,false,"one");
+console.log(myValue1)
+myValue1.splice(2,1,true);
+console.log(myValue1)
+// FindIndex
+let myArray = [100,200,300,400,500]
+let itemValue=myArray.findIndex(function(arrayValue){
+//  console.log(arrayValue);   
+ if(arrayValue === 600)
+ {
+    return true;
+ }
+ else
+ {
+    return false;
+ }
+});
+console.log(itemValue);
+// Includes
+console.log(`includes :`,firstName.includes("ul"));
+console.log(`includes :`,firstName.includes("go"));
+// IndexOf
+console.log(`IndexOf :`,firstName.indexOf("l"));
+// Find
+let findArray = [21,31,41,51]
+    let findValue=findArray.find(function(arrayValue){
+    //  console.log(arrayValue);   
+    // return arrayValue > 31;
+    // OR
+    if(arrayValue > 31)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    });
+    console.log(`Find First occurnce in filter - `,findValue);
 
 
